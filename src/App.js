@@ -35,7 +35,7 @@ function App() {
   useEffect(() => {
     let trm =""
     let arr = JSON.parse(localStorage.getItem('terms'));
-    if(arr.length>1){
+    if(arr && arr.length>1){
       trm = arr[arr.length-1];
     }
     else{
